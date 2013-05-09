@@ -1,0 +1,61 @@
+[data-jrrInput] {
+	background: transparent;
+	color: #222;
+	font-size: 18px;
+}
+
+/* This is the token itself */
+[data-jrrToken] > div {
+	display: inline-block;
+
+	position: relative;
+	padding: 8px 30px 8px 9px;
+	margin: 3px 4px 1px 1px;
+	font-size: 16px;
+	background: #a90329;
+	background: -moz-linear-gradient(top, #a90329 0%, #8f0222 44%, #6d0019 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#a90329), color-stop(44%,#8f0222), color-stop(100%,#6d0019));
+	background: -webkit-linear-gradient(top, #a90329 0%,#8f0222 44%,#6d0019 100%);
+	background: -o-linear-gradient(top, #a90329 0%,#8f0222 44%,#6d0019 100%);
+	background: -ms-linear-gradient(top, #a90329 0%,#8f0222 44%,#6d0019 100%);
+	background: linear-gradient(to bottom, #a90329 0%,#8f0222 44%,#6d0019 100%);
+	color: #fff;
+	text-shadow: 1px 1px 1px #4F0112;
+	border-radius: 4px;
+	border: 1px solid #660016;
+	box-shadow: inset 0 1px #FF053B;
+	cursor: pointer;
+
+	*float: left; /* ie7 */
+}
+
+[data-val] { position: relative; }
+/* This is the circle*/
+[data-val] span {
+	position: absolute;
+	right: 1px;
+	top: 2px;
+	padding: 1px 6px 3px;
+	font-size: 10px;
+	cursor: pointer;
+	background: #660016;
+	color: #fff;
+	border-radius: 10px;
+	box-shadow: inset 0 1px 5px rgba(0,0,0,0.4),
+						-1px 0px 5px rgb(38,0,8),
+						-1px 1px #B20326;
+}
+
+[data-val] span:hover {
+	background: #FF053B;
+	-webkit-animation: glow 1400ms infinite;
+	-moz-animation: glow 1400ms infinite;
+}
+
+[data-jrrInput] {	
+	margin: 0 0 0 2px;
+	height: 40px;
+	border: none;
+	font-size: 16px;
+}
+[data-jrrInput]:focus { outline: none; }
